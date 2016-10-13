@@ -123,13 +123,12 @@ def runAlgorithms(event):
     runAlgorithm+=" "+graphFilename
     runAlgorithm+=" "+"temp/answer";
     subprocess.Popen(['/bin/bash','-c',runAlgorithm])
-    
 
 closeButton = Button(plt.axes([0.87, 0.025, 0.1, 0.04]), 'Exit')
 closeButton.on_clicked(closeVisualizer)
 
 layoutSelectorPlace=plt.axes([0.01, 0.85, 0.13, 0.1])
-layoutSelectorPlace.annotate("Select graph display layout:\n",[0.0,0.9],weight="bold")
+layoutSelectorPlace.annotate("Select graph display layout:\n",[0.0,0.9],weight="bold",annotation_clip=True)
 layoutSelector = RadioButtons(layoutSelectorPlace,('circular(circo)','graphviz(fdp)'))
 layoutSelector.set_active(1)
 layoutSelector.on_clicked(layoutFunc)
@@ -152,6 +151,5 @@ colorButton.on_clicked(drawColored)
 uncolorButton = Button(plt.axes([0.57, 0.025, 0.1, 0.04]), 'Remove colors')
 uncolorButton.on_clicked(drawNotColored)
 
-plt.tight_layout()
 plt.show()
 

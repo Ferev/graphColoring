@@ -7,4 +7,6 @@ Also, a visualizer written in Python is provided which will present the colored 
 
 #Acknoledgements#
 
-The project is developed under the instruction of Emil Kelevedjiev, a researcher in the Bulgarian Academy of Sciences. Other supporters are Konstantin Delchev as a scientific advisor and HSSIMI.
+The project is started under the instruction of Emil Kelevedjiev, a researcher in the Bulgarian Academy of Sciences. Other supporters are Konstantin Delchev as a scientific advisor and HSSIMI.
+
+Currently, our mentor is Dr. Stoyan Vellev from SAP Labs Bulgaria.

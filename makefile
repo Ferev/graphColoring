@@ -23,7 +23,10 @@ genetic: ${DEPENDENCIES}
 	${MPICXX} ${CFLAGS} -o bin/genetic src/input/input.o src/output/output.o src/genetic/genetic.o
 
 cleanTemporary:
-	rm -rf *.o
+	cd src/antcol; make clean;
+	cd ../genetic; make clean;
+	rm -rf src/input/input.o
+	rm -rf src/output/ouput.o
 
-clean:
-	rm ${EXECS}
+clean: cleanTemporary
+	rm bin/${EXECS}
